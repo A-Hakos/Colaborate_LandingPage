@@ -13,7 +13,6 @@ export default function Header() {
     <>
       <div className="p-4 flex flex-row items-center justify-between bg-green-900 text-white">
         <div className="ml-5">Logo Here</div>
-        {/* <div> */}
         <nav className="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-center md:flex-row">
           {/* calling NavLink component */}
           {menuItems.map((item) => (
