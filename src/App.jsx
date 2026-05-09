@@ -1,4 +1,5 @@
 import Footer from "./components/Footer";
+import Banner from "./components/ui/carousel/Banner";
 import Header from "./components/Header";
 
 function App() {
@@ -7,6 +8,9 @@ function App() {
       <div className="flex flex-col min-h-screen">
         {/* Get Header component */}
         <Header />
+
+        {/* Get Banner component */}
+        <Banner />
 
         {/* Get Content Component */}
         <main className="flex-grow p-4">

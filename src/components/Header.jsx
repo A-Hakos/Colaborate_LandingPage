@@ -13,8 +13,16 @@ export default function Header() {
     <>
       <header className="sticky top-0 z-50 w-full">
         <div className="p-4 flex flex-row items-center justify-between bg-green-900 text-white shadow-md">
-          <div className="ml-5 font-bold">Logo Here</div>
-          <nav className="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-center md:flex-row">
+          <div className="ml-5 flex items-center">
+            <a href="/" className="flex items-center">
+              <img
+                src="/Logo.png"
+                alt="Logo"
+                className="w-36 h-36 inline-block"
+              />
+            </a>
+          </div>
+          <nav className="mr-60 flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-center md:flex-row">
             {/* calling NavLink component */}
             {menuItems.map((item) => (
               <NavLink key={item} label={item} />
