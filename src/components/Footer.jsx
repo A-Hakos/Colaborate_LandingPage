@@ -6,7 +6,7 @@ import react from "react";
 export default function Footer() {
   return (
     <>
-      <footer className="fixed bottom-0 left-0 right-0 w-full py-6 border-t border-divider bg-background z-50 overflow-y-auto max-h-[40vh]">
+      <footer className="w-full py-6 border-t border-divider bg-background">
         <div className="container mx-auto px-6">
           <link
             rel="stylesheet"
@@ -17,7 +17,6 @@ export default function Footer() {
             href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
           />
 
-          {/* <footer class="relative bg-blueGray-200 pt-8 pb-6"> */}
           <div className="flex flex-wrap justify-center items-top">
             <div className="flex flex-wrap text-left lg:text-left">
               <div className="w-full lg:w-6/12 px-4">
@@ -138,12 +137,9 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            {/* <hr className="my-6 border-blueGray-300" /> */}
-            {/* <div className="flex flex-wrap items-center md:justify-between justify-center"> */}
           </div>
           <div className="mt-6">
             <Separator className="my-4" />
-            {/* <div className="flex flex-wrap items-center justify-center"> */}
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
               <div className="text-sm text-blueGray-500 font-semibold py-1">
                 Copyright © 2026{" "}
@@ -154,11 +150,8 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          {/* </div> */}
         </div>
-        {/* </footer> */}
       </footer>
-      {/* <div></div> */}
     </>
   );
 }

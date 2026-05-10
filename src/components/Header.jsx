@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 w-full">
-        <div className="p-4 flex flex-row items-center justify-between bg-green-900 text-white shadow-md">
+        <div className="p-1.5 flex flex-row items-center justify-between bg-green-900 text-white shadow-md">
           <div className="ml-5 flex items-center">
             <a href="/" className="flex items-center">
               <img
