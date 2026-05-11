@@ -29,7 +29,8 @@ export default function Banner() {
           <div className="max-w-7xl ml-5 px-6 text-white"></div>
         </div>
       </div> */}
-      <div className="w-full h-[400px] relative">
+
+      {/* <div className="w-full h-125 relative">
         <div className="items-center justify-center">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
@@ -43,7 +44,7 @@ export default function Banner() {
               <img
                 src="/Logo.png"
                 alt="Coffee"
-                className=" w-full h-[400px] object-cover"
+                className=" w-full h-full object-cover"
               />
             </SwiperSlide>
 
@@ -51,7 +52,7 @@ export default function Banner() {
               <img
                 src="/banner2.png"
                 alt="Banner"
-                className=" w-full h-[400px] object-cover"
+                className=" w-full h-full object-cover"
               />
             </SwiperSlide>
 
@@ -59,11 +60,53 @@ export default function Banner() {
               <img
                 src="/testimoni.png"
                 alt="Testi"
-                className=" w-full h-[400px] object-cover"
+                className=" w-full h-full object-cover"
               />
             </SwiperSlide>
           </Swiper>
         </div>
+      </div> */}
+
+      <div className="w-full relative overflow-hidden">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={0}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000 }}
+          className="w-full"
+        >
+          <SwiperSlide>
+            <div className="w-full aspect-[21/9] md:aspect-[3/1] lg:aspect-[4/1] max-h-[500px]">
+              <img
+                src="/Logo.png"
+                alt="Coffee"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="w-full aspect-[21/9] md:aspect-[3/1] lg:aspect-[4/1] max-h-[500px]">
+              <img
+                src="/banner2.png"
+                alt="Banner"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="w-full aspect-[21/9] md:aspect-[3/1] lg:aspect-[4/1] max-h-[500px]">
+              <img
+                src="/testimoni.png"
+                alt="Testi"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </>
   );
