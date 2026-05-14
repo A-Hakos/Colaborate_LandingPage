@@ -1,62 +1,39 @@
-"use client"; //
+"use client";
 import React from "react";
-
-// Akan digunakan saat menggunakan swiper
-// Impor Komponen Utama
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 // Impor CSS Dasar Swiper
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// Impor Modul yang dibutuhkan (Opsional)
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
-export default function Carousel() {
+export default function Carousel({ items = [] }) {
   return (
-    <>
-      <div className="w-full relative overflow-hidden">
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={0}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 6000 }}
-          className="w-full"
-        >
-          <SwiperSlide>
+    <div className="w-full relative overflow-hidden group">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        spaceBetween={0}
+        slidesPerView={1}
+        navigation={true}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 4000 }}
+        speed={1000}
+        loop={items.length > 1}
+        className="w-full"
+      >
+        {items.map((item, index) => (
+          <SwiperSlide key={index}>
             <div className="w-full aspect-video md:h-[500px] lg:h-[70vh] relative">
               <img
-                src="/banner_awal.png"
-                alt="Banner1"
+                src={item.src}
+                alt={item.alt || `Slide ${index}`}
                 className="w-full h-full object-cover object-center"
               />
             </div>
           </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="w-full aspect-video md:h-[500px] lg:h-[70vh] relative">
-              <img
-                src="/Banner_wil.png"
-                alt="Banner2"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="w-full aspect-video md:h-[500px] lg:h-[70vh] relative">
-              <img
-                src="/banner_testi.png"
-                alt="Banner3"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
-    </>
+        ))}
+      </Swiper>
+    </div>
   );
 }
