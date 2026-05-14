@@ -13,3 +13,12 @@
     transition: width 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* Menghindari layout 'melompat' saat scrollbar muncul di Windows */
+  scrollbar-gutter: stable;
+}
