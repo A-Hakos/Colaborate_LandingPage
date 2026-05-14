@@ -1,6 +1,6 @@
 import Footer from "./components/Footer/Footer";
-import Banner from "./components/ui/carousel/Banner";
-import Header from "./components/Navbar/Navbar";
+import Banner from "./components/ui/Carousel/Carousel";
+import Header from "./components/Header/Header";
 import RecomendedCoffeShop from "./components/CoffeeCardRecommended/RecomendedCoffeShop";
 
 function App() {
