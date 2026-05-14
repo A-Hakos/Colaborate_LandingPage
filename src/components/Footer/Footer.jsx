@@ -142,11 +142,7 @@ export default function Footer() {
             <Separator className="my-4" />
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
               <div className="text-sm text-white font-semibold py-1">
-                Copyright © 2026{" "}
-                <a href="#" className="hover:text-gray-800">
-                  Creative Tim
-                </a>
-                .
+                Copyright © 2026 Creative Tim.
               </div>
             </div>
           </div>

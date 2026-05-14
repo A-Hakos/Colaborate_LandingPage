@@ -27,30 +27,30 @@ export default function Banner() {
           className="w-full"
         >
           <SwiperSlide>
-            <div className="w-full aspect-video md:h-[500px] lg:h-[70vh] relative">
+            <div className="w-full aspect-[21/9] md:aspect-[3/1] lg:aspect-[4/4] max-h-[550px]">
               <img
-                src="/banner_awal.png"
-                alt="Banner1"
+                src="/Logo.png" // ganti foto
+                alt="Coffee"
                 className="w-full h-full object-cover object-center"
               />
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="w-full aspect-video md:h-[500px] lg:h-[70vh] relative">
+            <div className="w-full aspect-[21/9] md:aspect-[3/1] lg:aspect-[4/4] max-h-[550px]">
               <img
-                src="/Banner_wil.png"
-                alt="Banner2"
+                src="/banner2.png" // ganti foto
+                alt="Banner"
                 className="w-full h-full object-cover object-center"
               />
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="w-full aspect-video md:h-[500px] lg:h-[70vh] relative">
+            <div className="w-full aspect-[21/9] md:aspect-[3/1] lg:aspect-[4/4] max-h-[550px]">
               <img
-                src="/banner_testi.png"
-                alt="Banner3"
+                src="/testimoni.png"
+                alt="Testi"
                 className="w-full h-full object-cover object-center"
               />
             </div>

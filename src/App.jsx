@@ -1,6 +1,7 @@
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import Banner from "./components/ui/carousel/Banner";
-import Header from "./components/Header";
+import Header from "./components/Navbar/Navbar";
+import RecomendedCoffeShop from "./components/CoffeeCardRecommended/RecomendedCoffeShop";
 
 function App() {
   return (
@@ -10,13 +11,14 @@ function App() {
         <Header />
 
         {/* Get Banner component */}
-        <Banner />
+        {/* <Banner /> */}
 
         {/* Get Content Component */}
         <main className="flex-grow">
           <div className="p-8 bg-gray-100 rounded-lg shadow-md">
             <h1 className="text-3xl font-bold">Welcome to Our App</h1>
             <p>Content goes here...</p>
+            <RecomendedCoffeShop />
           </div>
         </main>
 

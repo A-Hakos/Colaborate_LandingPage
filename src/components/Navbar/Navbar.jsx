@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import NavLink from "./Navbar/NavLink";
 import { menuItem } from "@heroui/theme";
 import { Button } from "@heroui/react";
+import NavLink from "../ui/NavLink/NavLink";
 
-export default function Header() {
+export default function Navbar() {
   // menu items for the navbar
   const menuItems = ["Home", "Explore", "Guide", "About"];
 
