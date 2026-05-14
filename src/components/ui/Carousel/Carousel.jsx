@@ -23,7 +23,7 @@ export default function Carousel({ items = [] }) {
         className="w-full"
       >
         {items.map((item, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={item.id || index}>
             <div className="w-full aspect-video md:h-[500px] lg:h-[70vh] relative">
               <img
                 src={item.src}
