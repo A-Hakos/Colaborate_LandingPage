@@ -1,6 +1,7 @@
 import Footer from "./components/Footer/Footer";
 import Banner from "./components/ui/Carousel/Carousel";
 import Header from "./components/Header/Header";
+import PopularityCard from "./components/CoffeeCardRecommended/PopularityCard";
 import RecomendedCoffeShop from "./components/CoffeeCardRecommended/RecomendedCoffeShop";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <main className="flex-grow">
           <div className="p-8 bg-gray-100 rounded-lg shadow-md">
             <h1 className="text-3xl font-bold">Welcome to Our App</h1>
+            <PopularityCard />
             <p>Content goes here...</p>
             <RecomendedCoffeShop />
           </div>
