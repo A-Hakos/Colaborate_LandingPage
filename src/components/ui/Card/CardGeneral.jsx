@@ -7,6 +7,10 @@ import {
   CardFooter,
   Link,
 } from "@heroui/react";
+import { useState } from "react";
+import DetailModal from "../../CoffeeCardRecommended/DetailModal";
+// import DetailModal from "../../CoffeeCardRecommended/DetailModal";
+// import React from "react";
 
 export default function CardGeneral({
   title,
@@ -17,6 +21,7 @@ export default function CardGeneral({
   linkDetail,
   imageUrl,
 }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <Card className="w-90 md:w-[calc(50%-1.5rem)] lg:w-[calc(25%-1.5rem)] p-4 mb-6 shadow-md rounded-xl h-full flex flex-col justify-between mx-3 bg-white border border-gray-100">
@@ -54,15 +59,30 @@ export default function CardGeneral({
 
           {/* Menggunakan sintaks link HeroUI standar */}
           <Link
-            href={linkDetail}
             showAnchorIcon
             color="amber"
-            className="text-sm font-semibold"
+            className="text-sm font-semibold cursor-pointer" // Tambahkan cursor-pointer agar terlihat bisa diklik
+            onPress={() => setIsModalOpen(true)} // Ini sudah benar memicu state
           >
             Detail
           </Link>
         </CardFooter>
       </Card>
+      {isModalOpen && (
+        <DetailModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          data={{
+            title,
+            desc,
+            content,
+            location,
+            rating,
+            linkDetail,
+            imageUrl,
+          }}
+        />
+      )}
     </>
   );
 }
