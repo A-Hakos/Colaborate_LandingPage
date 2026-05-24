@@ -17,7 +17,7 @@ export default function DetailModal({ isOpen, onClose, data }) {
     >
       <Modal.Backdrop variant="blur">
         <Modal.Container>
-          <Modal.Dialog className="sm:max-w-[500px] bg-white rounded-xl shadow-xl p-2">
+          <Modal.Dialog className="sm:max-w-[800px] bg-white rounded-xl shadow-xl p-6">
             <Modal.CloseTrigger onClick={onClose} />
 
             <Modal.Header>
