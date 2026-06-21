@@ -4,10 +4,11 @@ import React from "react";
 import { menuItem } from "@heroui/theme";
 import { Button } from "@heroui/react";
 import NavLink from "../ui/NavLink/NavLink";
+import Home from "../../Pages/Home/Home";
 
 export default function Navbar() {
   // menu items for the navbar
-  const menuItems = ["Home", "Explore", "Guide", "About"];
+  // const menuItems = ["Home", "Explore", "Guide", "About"];
 
   return (
     <>
@@ -24,9 +25,13 @@ export default function Navbar() {
           </div>
           <nav className="mr-60 flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-center md:flex-row">
             {/* calling NavLink component */}
-            {menuItems.map((item) => (
-              <NavLink key={item} label={item} />
-            ))}
+            {/* {menuItems.map((item) => (
+              <NavLink key={item} label={item} href={<Home />} />
+            ))} */}
+            <NavLink label="Home" href="/" />
+            <NavLink label="Explore" href="/explore" />
+            <NavLink label="Guide" href="/guide" />
+            <NavLink label="About" href="/about" />
           </nav>
         </div>
       </header>
