@@ -2,34 +2,12 @@
 
 import React from "react";
 import CardGeneral from "../ui/Card/CardGeneral";
+import { CoffeeShopRecommendations } from "../../constants/CoffeeShopRecommendations";
+import Pagination from "../ui/Pagination/Pagination";
 
 export default function RecomendedCoffeShop() {
-  const coffeeShops = [
-    {
-      title: "Coffee Shop A",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      content: "This is a simple card with some content.",
-      footer: "Footer content",
-      linkDetail: (
-        <a href="#" className="text-blue-500 hover:underline">
-          Learn more
-        </a>
-      ),
-      imageUrl: "/banner_awal.png",
-    },
-    {
-      title: "Coffee Shop B",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      content: "This is a simple card with some content.",
-      footer: "Footer content",
-      linkDetail: (
-        <a href="#" className="text-blue-500 hover:underline">
-          Learn more
-        </a>
-      ),
-      imageUrl: "/banner_testi.png",
-    },
-  ];
+  const featuredCoffeeshop = CoffeeShopRecommendations.slice(0, 4);
+
   return (
     <>
       <div>
@@ -41,16 +19,22 @@ export default function RecomendedCoffeShop() {
         <div className="text-2xl font-bold text-gray-800 inline-block ml-4">
           Recommended Coffee Shop
         </div>
+        <Pagination
+          currentPage={1}
+          totalPages={Math.ceil(CoffeeShopRecommendations.length / 4)}
+          onPageChange={() => {}}
+        />
         <div className="mt-6 flex flex-wrap -mx-4">
-          {coffeeShops.map((shop) => (
+          {featuredCoffeeshop.map((shop) => (
             <CardGeneral
-              key={shop.title}
+              key={shop.id}
               title={shop.title}
               desc={shop.desc}
               content={shop.content}
-              footer={shop.footer}
+              location={shop.location}
+              rating={shop.rating}
               linkDetail={shop.linkDetail}
-              imageUrl={shop.imageUrl}
+              imageUrl={shop.image}
             />
           ))}
         </div>
