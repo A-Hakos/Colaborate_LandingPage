@@ -9,8 +9,6 @@ import {
 } from "@heroui/react";
 import { useState } from "react";
 import DetailModal from "../../CoffeeCardRecommended/DetailModal";
-// import DetailModal from "../../CoffeeCardRecommended/DetailModal";
-// import React from "react";
 
 export default function CardGeneral({
   title,

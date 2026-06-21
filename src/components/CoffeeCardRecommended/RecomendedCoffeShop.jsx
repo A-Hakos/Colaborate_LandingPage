@@ -3,6 +3,7 @@
 import React from "react";
 import CardGeneral from "../ui/Card/CardGeneral";
 import { CoffeeShopRecommendations } from "../../constants/CoffeeShopRecommendations";
+import Pagination from "../ui/Pagination/Pagination";
 
 export default function RecomendedCoffeShop() {
   const featuredCoffeeshop = CoffeeShopRecommendations.slice(0, 4);
@@ -18,6 +19,11 @@ export default function RecomendedCoffeShop() {
         <div className="text-2xl font-bold text-gray-800 inline-block ml-4">
           Recommended Coffee Shop
         </div>
+        <Pagination
+          currentPage={1}
+          totalPages={Math.ceil(CoffeeShopRecommendations.length / 4)}
+          onPageChange={() => {}}
+        />
         <div className="mt-6 flex flex-wrap -mx-4">
           {featuredCoffeeshop.map((shop) => (
             <CardGeneral
