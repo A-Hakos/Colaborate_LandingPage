@@ -4,7 +4,7 @@ import React from "react";
 import { Mountain, Laptop, Camera, Wallet, Star } from "lucide-react";
 import CardFeature from "../ui/Card/CardFeature";
 
-export default function RecomendedCoffeShop() {
+export default function PopularityCard() {
   const features = [
     {
       title: "View Alam",
