@@ -15,8 +15,11 @@ function Home() {
         {/* Get Content Component */}
         <main className="flex-grow">
           <div className="p-8 bg-gray-100 rounded-lg shadow-md">
+            {/* Ketika sudah selesai ini bisa dihapus */}
             <h1 className="text-3xl font-bold">Welcome to Our App</h1>
             <p>Content goes here...</p>
+            {/* Ketika sudah selesai ini bisa dihapus */}
+
             <PopularityCard />
             <RecomendedCoffeShop />
           </div>
