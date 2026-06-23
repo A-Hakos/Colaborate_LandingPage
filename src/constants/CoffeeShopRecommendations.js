@@ -6,6 +6,7 @@ export const CoffeeShopRecommendations = [
     desc: "Toko Kopi TUKU Yogyakarta merupakan cabang dari pelopor tren kopi susu kekinian asal Jakarta yang membawa cita rasa ikoniknya ke Kota Pelajar. Berlokasi di kawasan bersejarah Kotabaru yang asri, kedai ini sukses menarik perhatian warga lokal maupun wisatawan berkat menu andalannya, Es Kopi Susu Tetangga. Perpaduan antara espresso yang mantap, susu yang creamy, dan manisnya gula aren khas Tuku menyajikan karakter rasa yang konsisten dan melekat di lidah para pencinta kopi. Sama seperti cabang di kota asalnya, Kopi TUKU Jogja mengusung konsep kedai lokal yang efisien dan ramah, menjadikannya pilihan utama untuk pembelian takeaway maupun pesan antar. Meski begitu, area kedainya tetap menyediakan ruang yang nyaman bagi pengunjung yang ingin menikmati kopi sejenak di tengah suasana Jogja yang santai. Kehadiran Tuku di Yogyakarta tidak hanya sekadar menawarkan segelas kopi, tetapi juga membawa budaya bertamu dan kehangatan khas merek tersebut ke dalam ekosistem kuliner lokal.",
     location: { locationId: 1, nama: "Yogyakarta" },
     rating: 4.5,
+    priceRange: { categoryPrice: "Rp-Rp", min: 30000, max: 60000 },
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const CoffeeShopRecommendations = [
     desc: "Kopi Nako Semarang hadir sebagai tempat nongkrong populer di kawasan Tembalang dan Candi (Jangli). Mengusung ciri khas arsitektur bangunan kaca transparan yang modern dan instagramable, kedai ini menawarkan area indoor yang nyaman serta area outdoor yang sangat luas dan asri. Khusus di cabang Jangli, pengunjung dapat menikmati kopi sembari berburu pemandangan matahari terbenam yang indah dari atas perbukitan Semarang. Menu yang disajikan sangat beragam dan ramah kantong, mulai dari Es Kopi Nako (kopi susu gula aren) yang khas hingga minuman non-kopi yang menyegarkan. Tak hanya minuman, tersedia juga makanan berat seperti Nasi Merem Melek yang pedas gurih serta aneka camilan, menjadikannya tempat ideal untuk tugas kelompok, kerja santai, atau sekadar berkumpul.",
     location: { locationId: 2, nama: "Semarang" },
     rating: 4.2,
+    priceRange: { categoryPrice: "Rp-Rp", min: 30000, max: 70000 },
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const CoffeeShopRecommendations = [
     desc: "Salah satu pelopor specialty coffee shop premium yang sangat hits di Purwokerto. Menawarkan desain interior modern elegan, biji kopi pilihan yang disangrai dengan baik, serta ruang yang luas untuk kumpul komunitas atau rapat kasual.",
     location: { locationId: 3, nama: "Purwokerto" },
     rating: 4.5,
+    priceRange: { categoryPrice: "Rp-Rp", min: 20000, max: 40000 },
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const CoffeeShopRecommendations = [
     desc: "Kafe estetik di pusat kota Magelang yang menggabungkan konsep tempat kopi modern dengan kenyamanan restoran keluarga. Menyediakan pilihan kopi beraroma mantap serta menu makanan barat (Western) hingga lokal Asia yang bervariasi.",
     location: { locationId: 4, nama: "Magelang" },
     rating: 4.4,
+    priceRange: { categoryPrice: "Rp", min: 15000, max: 35000 },
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const CoffeeShopRecommendations = [
     desc: "Kedai kopi unik yang terkenal akan perpaduan menu kopi susu kekinian serta donat artisan buatan rumah (homemade) yang lembut dengan berbagai pilihan rasa. Suasananya kasual, santai, dan sangat digemari generasi muda Magelang.",
     location: { locationId: 4, nama: "Magelang" },
     rating: 4.3,
+    priceRange: { categoryPrice: "Rp", min: 10000, max: 25000 },
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ export const CoffeeShopRecommendations = [
     desc: "Kedai kopi berkonsep modern minimalis yang menjadi salah satu tempat favorit anak muda di Kudus. Memiliki area indoor yang tenang dan ber-AC untuk fokus bekerja atau belajar, serta area outdoor yang asyik untuk nongkrong di sore hari.",
     location: { locationId: 5, nama: "Kudus" },
     rating: 4.8,
+    priceRange: { categoryPrice: "Rp", min: 15000, max: 30000 },
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ export const CoffeeShopRecommendations = [
     desc: "Kedai kopi lokal yang nyaman dengan sentuhan dekorasi retro yang membawa kesan nostalgia. Tempat ini menjadi wadah berkumpulnya komunitas kreatif di Kebumen, berkat keramahan baristanya serta sajian kopi hitam lokal beraroma kuat yang otentik.",
     location: { locationId: 6, nama: "Kebumen" },
     rating: 3.7,
+    priceRange: { categoryPrice: "Rp", min: 10000, max: 25000 },
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ export const CoffeeShopRecommendations = [
     desc: "Tempat nongkrong berkonsep semi-terbuka dengan suasana santai ala rumahan. Kedai ini sangat populer di kalangan pelajar dan mahasiswa setempat karena varian menunya yang sangat ramah di dompet namun tetap menyajikan cita rasa kopi susu yang gurih dan manis pas.",
     location: { locationId: 6, nama: "Kebumen" },
     rating: 4.1,
+    priceRange: { categoryPrice: "Rp", min: 10000, max: 25000 },
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ export const CoffeeShopRecommendations = [
     desc: "Mengusung konsep industrial modern yang estetik dengan dominasi warna monokrom. Tempat ini menjadi salah satu pelopor tempat ngopi kekinian di Cilacap yang menyediakan area indoor ber-AC yang nyaman untuk bekerja serta area outdoor yang luas untuk nongkrong sore.",
     location: { locationId: 7, nama: "Cilacap" },
     rating: 4.9,
+    priceRange: { categoryPrice: "Rp", min: 15000, max: 30000 },
   },
   {
     id: 10,
@@ -78,5 +87,6 @@ export const CoffeeShopRecommendations = [
     desc: "Tempat ngopi di pusat kota Wonosobo dengan interior hangat bertema kayu dan bata ekspos. Sangat nyaman untuk menghangatkan diri dari dinginnya kota Wonosobo sambil mengobrol santai menikmati varian espresso atau cokelat panas.",
     location: { locationId: 8, nama: "Wonosobo" },
     rating: 4.5,
+    priceRange: { categoryPrice: "Rp-Rp", min: 40000, max: 70000 },
   },
 ];

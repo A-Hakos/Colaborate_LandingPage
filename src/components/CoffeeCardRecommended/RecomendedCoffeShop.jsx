@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import CardGeneral from "../ui/Card/CardGeneral";
 import { Link } from "@heroui/react";
 import { useNavigate } from "react-router-dom";
-import CardGeneral from "../ui/Card/CardGeneral";
 import { CoffeeShopRecommendations } from "../../constants/CoffeeShopRecommendations";
 // import Pagination from "../ui/Pagination/Pagination";
 // import { Route, Routes } from "react-router-dom";

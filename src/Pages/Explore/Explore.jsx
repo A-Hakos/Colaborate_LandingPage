@@ -1,10 +1,13 @@
 "use Client";
 
+import { Button } from "@heroui/react";
 import React from "react";
+import VideoExplore from "../../components/VideoExplore/VideoExplore";
 
 export default function Explore() {
   return (
     <>
+      <VideoExplore />
       <div>
         <p className="text-3xl font-bold">Explore</p>
         <p className="mt-4 text-lg">
